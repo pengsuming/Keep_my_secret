@@ -1,4 +1,7 @@
-﻿init:
+﻿# 커밋 테스트
+
+
+init:
     image ara = "images/char/ara.png"
     image siu = "images/char/siu.png"
     image Yeoju = "images/char/여주.png"
