@@ -1,0 +1,26 @@
+﻿I'm sorry, but errors were detected in your script. Please correct the
+errors listed below, and try again.
+
+
+File "game/script.rpy", line 143: Line is indented, but the preceding say statement statement does not expect a block. Please check this line's indentation. You may have forgotten a colon (:).
+    "ㅠㅠ 완자야 많이 힘들었지.. 내가 빨리 구해줄게!!!!"
+    ^
+
+File "game/script.rpy", line 152: expected 'label_name' not found.
+    jump
+        ^
+
+File "game/script.rpy", line 154: expected 'label_name' not found.
+    jump
+        ^
+
+File "game/script.rpy", line 214: expected 'label_name' not found.
+    jump
+        ^
+
+File "game/script.rpy", line 216: expected 'label_name' not found.
+    jump
+        ^
+
+Ren'Py Version: Ren'Py 8.2.1.24030407
+Tue May  7 01:08:52 2024
