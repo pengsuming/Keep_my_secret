@@ -1,5 +1,5 @@
 # ESG 미연시 게임 
-<img src="https://img.shields.io/badge/renpy-FF7F7F?style=for-the-badge&logo=renpy&logoColor=white">
+<img src="https://img.shields.io/badge/renpy-FF7F7F?style=for-the-badge&logo=renpy&logoColor=white">&nbsp;
 <img src="https://img.shields.io/badge/figma-F24E1E?style=for-the-badge&logo=figma&logoColor=white">
 <img src="https://img.shields.io/badge/python-3776AB?style=for-the-badge&logo=python&logoColor=white">
 <img src="https://img.shields.io/badge/notion-000000?style=for-the-badge&logo=notion&logoColor=white">
