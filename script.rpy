@@ -13,6 +13,9 @@ init:
     image Ythink = "images/char/생각.png"
     image Yrelieve = "images/char/안도.png"
 
+    image dragon = "images/char/용.png"
+    image friends = "images/char/친구들.png"
+
     image bg school = "images/bg/school.jpg"
     image bg lobby = "images/bg/lobby.jpg"
     image bg playground = "images/bg/playground.jpg"
@@ -22,6 +25,8 @@ init:
     define 김완자 = Character("김완자", color="000000")
     define 이푸준 = Character("이푸준", color="000000")
     define 한두부 = Character("한두부", color="000000")
+    define 용 = Character("용", color="000000")
+    define 친구들 = Character("친구들", color="000000")
 
     #
     define bunker = 0
