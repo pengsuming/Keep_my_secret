@@ -1,6 +1,8 @@
 import pygame
 import sys
 import os
+import subprocess
+
 
 # 작업 디렉토리를 이미지 폴더로 변경
 os.chdir("C:/Users/Win10/Downloads/renpy-8.2.1-sdk/Projects/ITShow/game/images/main")
@@ -50,6 +52,11 @@ def main():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
+            elif event.type == pygame.MOUSEBUTTONDOWN:
+                if waste_rect.collidepoint(event.pos):
+
+                    subprocess.Popen(["python", "minigame/minigame.py"])
+                    running = False
 
 
         # 배경 이미지 표시
@@ -59,7 +66,7 @@ def main():
         screen.blit(character_image, character_rect)
 
         # 완자 위에 쓰레기 이미지 표시
-        screen.blit(waste_image, (60, 17))
+        waste_rect = screen.blit(waste_image, (60, 17))
 
         # 남자 주인공 이미지와 설명 표시
         y_offset = 140
