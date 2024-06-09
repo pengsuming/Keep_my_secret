@@ -57,8 +57,7 @@ def run_game():
         for event in pygame.event.get():
             if event.type == pygame.QUIT:
                 running = False
-                pygame.quit()
-                sys.exit()
+
 
         keys = pygame.key.get_pressed()
         if keys[pygame.K_LEFT] and player_x > 0:
@@ -96,3 +95,5 @@ def run_game():
 
     pygame.quit()
 
+if __name__ == "__main__":
+    run_game()
