@@ -1,22 +1,26 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 284, in script
-Exception: Sayer '누군가' is not defined.
+  File "game/script.rpy", line 289, in script call
+    call main_menu
+  File "game/script.rpy", line 289, in script call
+    call main_menu
+ScriptError: could not find label 'main_menu'.
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 284, in script
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
-    Say.execute(self)
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 575, in execute
-    who = eval_who(self.who, self.who_fast)
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 464, in eval_who
-    raise Exception("Sayer '%s' is not defined." % who)
-Exception: Sayer '누군가' is not defined.
+  File "game/script.rpy", line 289, in script call
+    call main_menu
+  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 1416, in execute
+    rv = renpy.game.context().call(label, return_site=self.next.name)
+  File "game/script.rpy", line 289, in script call
+    call main_menu
+  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\script.py", line 1103, in lookup
+    raise ScriptError("could not find label '%s'." % str(original))
+ScriptError: could not find label 'main_menu'.
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 ITShow 1.0
-Thu Jun  6 22:12:13 2024
+Sun Jun  9 10:01:53 2024

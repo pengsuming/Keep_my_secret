@@ -1,6 +1,13 @@
 ﻿# 커밋 테스트
 # 다시 테스트
 
+init python:
+    import subprocess
+    import os
+
+    def start_minigame():
+        script_path = os.path.join(config.basedir, "minigame", "minigame.py")
+        subprocess.Popen(["python", script_path])
 
 init:
 
@@ -130,6 +137,8 @@ label start:
 
     "김여주! 나야.. 이푸준..! 내 얘기 좀 들어줘.."
     여주 "어..? 이 목소린 한달 전 헤어진 나의 X, 피규어 집착남 이푸준?!?!?!?!"
+
+    $ start_minigame()
 
     menu:
         "있기야 하지~ 근데.. 내가 너를 도와줄 것 같아!?":
