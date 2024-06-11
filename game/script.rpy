@@ -25,6 +25,36 @@ init:
     image bg lobby = "images/bg/lobby.jpg"
     image bg playground = "images/bg/playground.jpg"
 
+    image bg pro1 = "images/prologue/1_S122.jpg"
+    image bg pro2 = "images/prologue/2_S3.jpg"
+    image bg pro3 = "imagas/prologue/3_S4.jpg"
+    image bg pro4 = "imagas/prologue/4_S5.jpg"
+    image bg pro5 = "imagas/prologue/5_S6.jpg"
+    image bg pro6 = "imagas/prologue/6_S62.jpg"
+    image bg pro7 = "imagas/prologue/7_S106.jpg"
+    image bg pro8 = "images/prologue/8_S114.jpg"
+    image bg pro9 = "images/prologue/9_S118.jpg"
+    image bg pro10 = "imagas/prologue/10_S7.jpg"
+    image bg pro11 = "imagas/prologue/11_S9.jpg"
+    image bg pro12 = "imagas/prologue/12_S10.jpg"
+    image bg pro13 = "imagas/prologue/13_S11.jpg"
+    image bg pro14 = "imagas/prologue/14_S66.jpg"
+    image bg pro15 = "images/prologue/15_74.jpg"
+    image bg pro16 = "images/prologue/16_S94.jpg"
+    image bg pro17 = "imagas/prologue/17_S98.jpg"
+    image bg pro18 = "imagas/prologue/18_S102.jpg"
+    image bg pro19 = "imagas/prologue/19_S12.jpg"
+    image bg pro20 = "imagas/prologue/20_S14.jpg"
+    image bg pro21 = "imagas/prologue/21_S15.jpg"
+
+    image bg pro22 = "imagas/prologue/12_S10.jpg"
+    image bg pro23 = "imagas/prologue/13_S11.jpg"
+    image bg pro24 = "imagas/prologue/14_S66.jpg"
+    image bg pro25 = "images/prologue/1_S122.jpg"
+    image bg pro26 = "images/prologue/2_S3.jpg"
+    image bg pro27 = "imagas/prologue/3_S4.jpg"
+    image bg pro28 = "imagas/prologue/4_S5.jpg"
+
 
     define 여주 = Character("여주", color="000000")
     define 김완자 = Character("김완자", color="000000")
