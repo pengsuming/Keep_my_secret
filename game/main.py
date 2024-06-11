@@ -59,7 +59,7 @@ def main():
             elif event.type == pygame.MOUSEBUTTONDOWN:
                 if waste_rect.collidepoint(event.pos):
                     pygame.quit()
-                    subprocess.Popen(["python", "minigame/minigame.py"])
+                    subprocess.Popen(["python", "minigame.py"])
                     running = False
                     sys.exit()
 

@@ -16,7 +16,7 @@ def run_game():
     screen_width = 800
     screen_height = 600
     screen = pygame.display.set_mode((screen_width, screen_height))
-    pygame.display.set_caption("똥 피하기 게임")
+    pygame.display.set_caption("쓰레기 줍기")
 
     # 플레이어 설정
     player_width = 50
@@ -30,6 +30,16 @@ def run_game():
     waste_height = 50
     waste_speed = 7
     waste = []
+
+    # 쓰레기 이미지 로드
+    waste_images = [
+        pygame.image.load('images/char/쓰레기1.png'),
+        pygame.image.load('images/char/쓰레기2.png'),
+        pygame.image.load('images/char/쓰레기3.png'),
+        pygame.image.load('images/char/쓰레기4.png'),
+        pygame.image.load('images/char/쓰레기5.png')
+    ]
+    waste_images = [pygame.transform.scale(img, (waste_width, waste_height)) for img in waste_images]
 
     # 점수 설정
     score = 0
@@ -76,25 +86,27 @@ def run_game():
             player_x += player_speed
 
         # 쓰레기 생성
-        if random.randint(1, 20) <= 1:
+        if random.randint(1, 10) <= 2:
             waste_x = random.randint(0, screen_width - waste_width)
-            waste.append(pygame.Rect(waste_x, 0, waste_width, waste_height))
+            img = random.choice(waste_images)
+            waste.append({"rect": pygame.Rect(waste_x, 0, waste_width, waste_height), "image": img})
 
         if random.randint(1, 10) == 1:  # 10% 확률로 한 번에 여러 개 생성
-            for _ in range(random.randint(1, 3)):  # 1에서 3개의 쓰레기 추가 생성
+            for _ in range(random.randint(1, 3)):  # 1에서 5개의 쓰레기 추가 생성
                 waste_x = random.randint(0, screen_width - waste_width)
-                waste.append(pygame.Rect(waste_x, 0, waste_width, waste_height))
+                img = random.choice(waste_images)
+                waste.append({"rect": pygame.Rect(waste_x, 0, waste_width, waste_height), "image": img})
 
         # 쓰레기 이동
         for trash in waste:
-            trash.y += waste_speed
-            if trash.y > screen_height:
+            trash["rect"].y += waste_speed
+            if trash["rect"].y > screen_height:
                 waste.remove(trash)
 
         # 충돌 감지
         player_rect = pygame.Rect(player_x, player_y, player_width, player_height)
         for trash in waste:
-            if player_rect.colliderect(trash):
+            if player_rect.colliderect(trash["rect"]):
                 score += 1
                 waste.remove(trash)
 
@@ -102,7 +114,7 @@ def run_game():
         screen.fill(WHITE)
         pygame.draw.rect(screen, BLACK, player_rect)
         for trash in waste:
-            pygame.draw.rect(screen, RED, trash)
+            screen.blit(trash["image"], trash["rect"])
 
         show_score(score)
         pygame.display.flip()

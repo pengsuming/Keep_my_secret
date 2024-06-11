@@ -13,6 +13,11 @@ init:
     image Ythink = "images/char/생각.png"
     image Yrelieve = "images/char/안도.png"
 
+    image Kim = "images/char/완자.png"
+    image Kworry = "images/char/완자_걱정.png"
+    image Ksad = "images/char/완자_슬픔.png"
+    image Krelieve = "images/char/완자_안심.png"
+
     image dragon = "images/char/용.png"
     image friends = "images/char/친구들.png"
 
@@ -27,11 +32,74 @@ init:
     define 한두부 = Character("한두부", color="000000")
     define 용 = Character("용", color="000000")
     define 친구들 = Character("친구들", color="000000")
-
+    define 싼다수 = Character("싼다수",color="000000")
     #
     define bunker = 0
 
+# 여주인공 이름 입력받기
+label name_input:
+    $ 여주이름 = renpy.input("여주인공의 이름을 입력하세요.")
+    $ 여주이름 = 여주이름.strip()
+    if 여주이름 == "":
+        $ 여주이름 = "여주"
+    $ 여주 = Character(여주이름, color="000000")
+    return
+
+
 label start:
+    call name_input
+
+    #프롤로그
+    show bg school
+    "이곳은 바다가 보이는 학교,푸른 고등학교."
+    show Yeoju
+    "나, 김여주 올해 고2가 되었다."
+    여주 "나에게는 아주 소중한 남자친구 김완자가 있다."
+    여주 "그런데 이틀째 학교에 나오지 않는 완자, 혹시 무슨일이라도 생긴걸까?"
+    여주 "완자는 나에게 말도 없이 연락도 안보고, 학교에도 나오지 않는다. 담임선생님께서도 모른다고 하셨다."
+    "여주는 하교 후 완자네 집으로 향했다."
+    scene bg school with fade
+    "띵동"
+    show Yworry
+    여주 "완자야 나왔어ㅠㅠ 문 좀 열어봐."
+    hide Yworry
+    "그러나 여주의 몇번의 부름에도 완자는 굳게 닫힌 문은 열리지 않았다."
+    show Yanger
+    여주 "그렇다고 내가 못 열 것 같아?(완자의 집 열쇠를 꺼내들며)"
+    hide Yanger
+    "철컥"
+    show Ysurprise
+    여주 "어라...완자가 없잖아?"
+    hide Ysurprise
+    "여주의 눈앞에는 항상 완자가 즐겨마시던 싼다수가 바닥에 놓여있었다."
+    show Ythink
+    여주 "완자는 어디로 간 거지?"
+    hide Ythink
+    "여주는 완자의 방에도 들어가보았지만, 사람의 인기척이 느껴지지 않는 빈 방일 뿐이었다."
+    "그때, 바닥에 놓여있었던 싼다수가 말을 하기 시작했다."
+    show Ksad
+    싼다수 "여주야 살려줘"
+    hide Ksad
+    show Ysurprise
+    여주 "응...? 왜 싼다수에게서 완자 목소리가 들리지?"
+    여주 "너무 놀란 나는 정신없이 집으로 뛰어갔다."
+    hide Ysurprise
+    "다음날이 되고, 오늘도 완자는 학교에 오지 않았다."
+    show Ythink
+    여주 "어제는 정말 뭐였지..."
+    hide Ythink
+    show Krelieve
+    "그렇게 6교시가 끝날 무렵...어디선가 거친 숨소리가 들렸다."
+    "이제는 부정할 수 없었다. 저건 틀림없이 내 남자친구 완자였다."
+    hide Krelieve
+    #프롤로그 끝
+
+    python:
+        import subprocess
+        subprocess.Popen(["python", "main.py"])
+
+label start2:
+
     "쉬는 시간 종이 치자마자 나는 싼다수로 변한 완자를 들고 서둘러 복도 끝으로 뛰어갔다. "
     "여주는 숨이 차지만, 차분히 완자의 말을 들어보기로 했다."
     김완자 "여주야 놀라지 말고 들어... 내가 싼다수로 변해버렸어ㅠㅠ"
