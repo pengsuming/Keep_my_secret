@@ -2,25 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 284: python block expects a non-empty block.
-    python:
+File "game/script.rpy", line 109: expected statement.
+    "그러나 " + 여주 + "의 몇번의 부름에도 완자는 문을 열어주지 않았다.."
            ^
-
-File "game/script.rpy", line 285: expected statement.
-    import threading
-                    ^
-
-File "game/script.rpy", line 287: expected statement.
-    def run_minigame():
-                    ^
-
-File "game/script.rpy", line 291: expected statement.
-    thread = threading.Thread(target=run_minigame)
-           ^
-
-File "game/script.rpy", line 292: expected statement.
-    thread.start()
-                  ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Sat Jun  8 21:31:36 2024
+Mon Jun 17 21:15:58 2024
