@@ -27,33 +27,41 @@ init:
 
     image bg pro1 = "images/prologue/1_S122.jpg"
     image bg pro2 = "images/prologue/2_S3.jpg"
-    image bg pro3 = "imagas/prologue/3_S4.jpg"
-    image bg pro4 = "imagas/prologue/4_S5.jpg"
-    image bg pro5 = "imagas/prologue/5_S6.jpg"
-    image bg pro6 = "imagas/prologue/6_S62.jpg"
-    image bg pro7 = "imagas/prologue/7_S106.jpg"
+    image bg pro3 = "images/prologue/3_S4.jpg"
+    image bg pro4 = "images/prologue/4_S5.jpg"
+    image bg pro5 = "images/prologue/5_S6.jpg"
+    image bg pro6 = "images/prologue/6_S62.jpg"
+    image bg pro7 = "images/prologue/7_S106.jpg"
     image bg pro8 = "images/prologue/8_S114.jpg"
     image bg pro9 = "images/prologue/9_S118.jpg"
-    image bg pro10 = "imagas/prologue/10_S7.jpg"
-    image bg pro11 = "imagas/prologue/11_S9.jpg"
-    image bg pro12 = "imagas/prologue/12_S10.jpg"
-    image bg pro13 = "imagas/prologue/13_S11.jpg"
-    image bg pro14 = "imagas/prologue/14_S66.jpg"
+    image bg pro10 = "images/prologue/10_S7.jpg"
+    image bg pro11 = "images/prologue/11_S9.jpg"
+    image bg pro12 = "images/prologue/12_S10.jpg"
+    image bg pro13 = "images/prologue/13_S11.jpg"
+    image bg pro14 = "images/prologue/14_S66.jpg"
     image bg pro15 = "images/prologue/15_74.jpg"
     image bg pro16 = "images/prologue/16_S94.jpg"
-    image bg pro17 = "imagas/prologue/17_S98.jpg"
-    image bg pro18 = "imagas/prologue/18_S102.jpg"
-    image bg pro19 = "imagas/prologue/19_S12.jpg"
-    image bg pro20 = "imagas/prologue/20_S14.jpg"
-    image bg pro21 = "imagas/prologue/21_S15.jpg"
+    image bg pro17 = "images/prologue/17_S98.jpg"
+    image bg pro18 = "images/prologue/18_S102.jpg"
+    image bg pro19 = "images/prologue/19_S12.jpg"
+    image bg pro20 = "images/prologue/20_S14.jpg"
+    image bg pro21 = "images/prologue/21_S15.jpg"
+    image bg pro22 = "images/prologue/22_S16.jpg"
+    image bg pro23 = "images/prologue/23_S70.jpg"
+    image bg pro24 = "images/prologue/24_S78.jpg"
+    image bg pro25 = "images/prologue/25_S82.jpg"
+    image bg pro26 = "images/prologue/26_S86.jpg"
+    image bg pro27 = "images/prologue/27_S90.jpg"
+    image bg pro28 = "images/prologue/28_S17.jpg"
+    image bg pro29 = "images/prologue/29_S28.jpg"
+    image bg pro30 = "images/prologue/30_S29.jpg"
+    image bg pro31 = "images/prologue/31_S30.jpg"
+    image bg pro32= "images/prologue/32_S64.jpg"
+    image bg pro33 = "images/prologue/33_S108.jpg"
+    image bg pro34 = "images/prologue/34_S112.jpg"
+    image bg pro35 = "images/prologue/35_S116.jpg"
+    image bg pro36 = "images/prologue/36_S120.jpg"
 
-    image bg pro22 = "imagas/prologue/12_S10.jpg"
-    image bg pro23 = "imagas/prologue/13_S11.jpg"
-    image bg pro24 = "imagas/prologue/14_S66.jpg"
-    image bg pro25 = "images/prologue/1_S122.jpg"
-    image bg pro26 = "images/prologue/2_S3.jpg"
-    image bg pro27 = "imagas/prologue/3_S4.jpg"
-    image bg pro28 = "imagas/prologue/4_S5.jpg"
 
 
     define 여주 = Character("여주", color="000000")
@@ -79,49 +87,89 @@ label name_input:
 label start:
     call name_input
 
-    #프롤로그
-    show bg school
+    #프롤로그 시작
+    show bg pro1
     "이곳은 바다가 보이는 학교,푸른 고등학교."
-    show Yeoju
-    "나, 김여주 올해 고2가 되었다."
+    show bg pro2
+    여주 "올해 나는 고2가 되었다."
+    show bg pro3
     여주 "나에게는 아주 소중한 남자친구 김완자가 있다."
-    여주 "그런데 이틀째 학교에 나오지 않는 완자, 혹시 무슨일이라도 생긴걸까?"
+    show bg pro4
+    여주 "그런데 이틀째 학교에 나오지 않는 완자.. 혹시 무슨일이라도 생긴걸까..?"
+    show bg pro5
     여주 "완자는 나에게 말도 없이 연락도 안보고, 학교에도 나오지 않는다. 담임선생님께서도 모른다고 하셨다."
-    "여주는 하교 후 완자네 집으로 향했다."
-    scene bg school with fade
+    show bg pro6
+    여주 "내 남자친구는 내가 지킨다!! 완자 집으로 찾아가야겠어!!"
+    show bg pro7
+    "하교 후 곧장 완자네 집으로 향했다."
+    show bg pro8
     "띵동"
-    show Yworry
-    여주 "완자야 나왔어ㅠㅠ 문 좀 열어봐."
-    hide Yworry
-    "그러나 여주의 몇번의 부름에도 완자는 굳게 닫힌 문은 열리지 않았다."
-    show Yanger
-    여주 "그렇다고 내가 못 열 것 같아?(완자의 집 열쇠를 꺼내들며)"
-    hide Yanger
+    여주 "완자야 나 왔어 ㅠㅠ 문 좀 열어봐....!!!!!!"
+    show bg pro9
+    "그러나 여주의 몇번의 부름에도 완자는 문을 열어주지 않았다.."
+    show bg pro10
+    여주 "ㅋ그렇다고 내가 못 열 것 같나\n완자의 집 열쇠는 이미 훔친지 오래다."
     "철컥"
-    show Ysurprise
-    여주 "어라...완자가 없잖아?"
-    hide Ysurprise
-    "여주의 눈앞에는 항상 완자가 즐겨마시던 싼다수가 바닥에 놓여있었다."
-    show Ythink
+    show bg pro11
+    "어라...완자는 없고 항상 완자가 즐겨마시던 싼다수가 눈앞에 있다.."
     여주 "완자는 어디로 간 거지?"
-    hide Ythink
-    "여주는 완자의 방에도 들어가보았지만, 사람의 인기척이 느껴지지 않는 빈 방일 뿐이었다."
+    show bg pro12
+    "완자의 방에도 가보았지만, 완자는 없는 빈 방일 뿐이였다."
     "그때, 바닥에 놓여있었던 싼다수가 말을 하기 시작했다."
-    show Ksad
-    싼다수 "여주야 살려줘"
-    hide Ksad
-    show Ysurprise
+    show bg pro13
+    싼다수 "여주야.. 사,살려줘.."
+    show bg pro14
     여주 "응...? 왜 싼다수에게서 완자 목소리가 들리지?"
-    여주 "너무 놀란 나는 정신없이 집으로 뛰어갔다."
-    hide Ysurprise
-    "다음날이 되고, 오늘도 완자는 학교에 오지 않았다."
-    show Ythink
-    여주 "어제는 정말 뭐였지..."
-    hide Ythink
-    show Krelieve
-    "그렇게 6교시가 끝날 무렵...어디선가 거친 숨소리가 들렸다."
-    "이제는 부정할 수 없었다. 저건 틀림없이 내 남자친구 완자였다."
-    hide Krelieve
+    show bg pro15
+    "너무 놀란 나는 정신없이 집으로 뛰어갔다."
+    show bg pro16
+    "다음날이 되고, 오늘도 완자는 학교에 오지 않았다..\n어제는 정말 뭐였지.."
+    show bg pro17
+    "그렇게 6교시가 끝날 무렵..\n어디선가 거친 숨소리가 들려왔다."
+    show bg pro18
+    싼다수 "헉..헉..후.."
+    "이제는 부정할 수 없었다. 저건 틀림없이 내 남자친구 완자다."
+    show bg pro19
+    "쉬는시간 종이 치자마자 나는 싼다수로 변한 완자를 들고 서둘러 복도 끝으로 뛰어갔다."
+    show bg pro20
+    "뛰어서 숨이 차지만, 차분하게 완자의 말을 들어보기로 했다."
+    싼다수 "여주야 놀라지 말고 들어..\n나.. 보이는 것처럼 싼다수로 변했어 ㅠㅠ"
+    싼다수 "내가 평소에 싼다수 마시고 바닥에 던져놨잖아.\n그걸 본 바다에 사는 용왕님이 분노해서 나에게 쓰레기로 변하는 저주를 내렸어 ㅠㅠ"
+    싼다수 "쓰레기를 함부로 버린 모든 사람에게 저주가 내려질거래..ㅠㅠ"
+    show bg pro21
+    "어..? 잠시만 쓰레기를 함부로 버린 '모든' 사람?!?!??!!"
+    show bg pro22
+    "그때 머릿속에 스쳐지나가는 두 명의 남자.."
+    show bg pro23
+    여주 "아악!! 이걸 어쩌면 좋지?!?!?!?"
+    show bg pro24
+    여주 "어떻게 하면 내가 살 수 있..ㅇ\n아니..너를 살릴 수 있어? (나만 아니면 돼)"
+    show bg pro25
+    "그 순간, 무언가 펑 터지는 큰 소리와 함께 바닷속에서 거대한 용이 나타나 나에게 뽑기통을 건넸다."
+    show bg pro26
+    용 "자 뽑아라. 네가 아이스크림 막대기를 함부로 버리는 걸 알고 있다.\n너의 남자친구가 저주로 인해 쓰레기로 변한건 알고 있지? 곧 너도 그렇게 될거다"
+    show bg pro27
+    용 "너의 남자친구와 주변 친구들, 그리고 너 자신의 저주도 피하고 싶다면, 이 뽑기통에서 뽑은 숫자만큼의 쓰레기를 주우면 돼. 간단하지?\n단 무슨 숫자가 나올진 모른다."
+    show bg pro28
+    여주 "낮은 숫자도 있는거죠..? 제발!!!!!!!!!!!"
+    show bg pro29
+    여주 "아 @^!ㅃ#$ 망했네."
+    용 "운도 더럽게 없군. 수고해라. 지켜보고 있으니 허튼 짓은 소용 없다."
+    show bg pro30
+    여주 "아.. 아니야.. 이건 꿈일거야..\n귀엽고 예쁜 내게 왜 이런 일이.. 안돼!!!!!!!"
+    show bg pro31
+    "평소 자신을 요정이라고 생각하는 여주는 '167'개의 쓰레기를 주워야 한다는 망연자실한 사실에 그만.. 순간적회피성 기절을 하고 만다.."
+    "다음날"
+    show bg pro32
+    여주 "우어.. 내가 언제 잠들었지.. 기억이 안나.."
+    show bg pro33
+    싼다수 "여주야 너 용왕님 만나서 저주 풀기 위해 쓰레기 줍는 뽑기 하고 뽑은 수가 너무 높아서 그 충격에 갑자기 쓰러졌었어.. 괜찮아..?ㅠㅠ"
+    show bg pro34
+    "완자의 말을 들은 여주는 믿고 싶지 않은 현실이 기억났다."
+    show bg pro35
+    여주 "그래 내가 그동안 함부로 버린 쓰레기에 대한 엄청난 벌이야..\n내 주변사람들까지도 쓰레기를 함부로 버리고 저주로 인해 모두 변해버렸지..\n그리고 곧 나도 그렇게 될거야.. 이제 어쩌면 좋지.."
+    show bg pro36
+    여주 "정신차려 나 자신!! 결심했어..!\n모두의 저주도 풀어주고 환경을 지키기로..!!!"
     #프롤로그 끝
 
     python:
@@ -129,40 +177,6 @@ label start:
         subprocess.Popen(["python", "main.py"])
 
 label start2:
-
-    "쉬는 시간 종이 치자마자 나는 싼다수로 변한 완자를 들고 서둘러 복도 끝으로 뛰어갔다. "
-    "여주는 숨이 차지만, 차분히 완자의 말을 들어보기로 했다."
-    김완자 "여주야 놀라지 말고 들어... 내가 싼다수로 변해버렸어ㅠㅠ"
-    여주 "어째서?"
-    김완자 "내가 싼다수를 마시고 바다에 던진적이 있는데, 용왕님이 분노하셔서 나에게 저주를 걸어버렸어."
-    여주 "어떤 저주?"
-    김완자 "쓰레기를 함부로 버린 모든 사람들이 자신이 버린 쓰레기로 변해버리는 저주야."
-    여주 "어…? 잠깐, 쓰레기를 함부로 버린 모든 사람!?!?"
-    "( 여주의 머릿속에는 두명의 남자들과 바닷가에서 놀며 쓰레기를 버리고 온 장면이 스쳐 지나간다.)"
-    여주 "아악!! 이걸 어쩌면 좋지? 자칫하면 나까지 쓰레기로 변해버리겠어. "
-    여주 "어떻게 하면 내가 살 수 있…아니아니, 너를 살릴 수 있는 거야? "
-    "펑!?!"
-    "무언가 터지는 큰 소리와 함께 바닷속에서 거대한 용이 눈앞에 나타났다. "
-    용 "자 뽑아라. 네가 아이스크림 막대기를 함부로 버리는걸 알고 있다. 너의 남자친구가 저주로 인해 쓰레기로 변한건 알고 있겠지? 곧 너도 그렇게 될것이다. "
-    여주 "안돼요!"
-    용 "너의 남자친구와 주변 친구들, 그리고 너자신이 저주에 걸리는 것을 피하고 싶다면 한가지 방법이 있지"
-    여주 "그게 뭐죠?"
-    용 "이 뽑기통에서 뽑은 숫자만큼의 쓰레기를 주우면 된다. 정말 간단하지 않은가?"
-    여주"(내가 저주에 걸리지 않으려면…) 뽑을게요!"
-    용" (뽑기통을 내민다) "
-    여주"(침을 삼키며)낮은 숫자도 있는 거죠? "
-    "(뽑기 화면으로 전환한다.)"
-
-    "여주는 손에 잡힌 종이를 펼쳐 숫자를 확인했다."
-    여주 "167…?"
-    "평소 자신을 요정이라고 생각하는 여주는 167개의 쓰레기를 주워야 한다는 사실에 충격을 받아 기절을 하고 만다."
-    "(다음날)"
-    여주 "어? 내가 언제 잠들었지…? 기억이 안나…"
-    김완자 "여주야 일어났구나.. 하루를 꼬박 기절해 있어서 걱정했어. 괜찮아? "
-    "(어제 있었던 일을 설명) "
-    "여주는 167개의 쓰레기를 주워야 한다는 사실이 정말이라는 것에 충격을 받았다."
-    여주 "그래, 내가 용왕의 조건을 받아들이지 않는다면 내 주변 사람들까지 저주를 받아 쓰레기로 변해버릴 거야. 나중에는 나까지 쓰레기로 변하게 되겠지…"
-    여주 "그래! 결심했어. 쓰레기를 주워서 환경을 지키고 모두의 저주를 풀어주겠어."
 
     scene bg school with fade
 

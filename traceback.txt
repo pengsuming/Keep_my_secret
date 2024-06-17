@@ -1,31 +1,24 @@
 ﻿I'm sorry, but an uncaught exception occurred.
 
 While running game code:
-  File "game/script.rpy", line 51, in script
-    여주 "나, [여주이름] 올해 고2가 되었다."
-NameError: name '펭수밍' is not defined
+  File "game/script.rpy", line 92, in script
+    여주 "아 @%!ㅃ#$ 망했네."
+ValueError: unsupported format character '!' (0x21) at index 4
 
 -- Full Traceback ------------------------------------------------------------
 
 Full traceback:
-  File "game/script.rpy", line 51, in script
-    여주 "나, [여주이름] 올해 고2가 되었다."
+  File "game/script.rpy", line 92, in script
+    여주 "아 @%!ㅃ#$ 망했네."
   File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 2557, in execute
     Say.execute(self)
   File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\ast.py", line 615, in execute
     renpy.exports.say(who, what, *args, **kwargs)
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\exports.py", line 1493, in say
-    who(what, *args, **kwargs)
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\character.py", line 1374, in __call__
-    who = renpy.python.py_eval(who)
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\python.py", line 1209, in py_eval
-    return py_eval_bytecode(code, globals, locals)
-  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\python.py", line 1202, in py_eval_bytecode
-    return eval(bytecode, globals, locals)
-  File "<none>", line 1, in <module>
-NameError: name '펭수밍' is not defined
+  File "C:\Users\Win10\Downloads\renpy-8.2.1-sdk\renpy\exports.py", line 1482, in say
+    what = what % tag_quoting_dict
+ValueError: unsupported format character '!' (0x21) at index 4
 
 Windows-10-10.0.22631 AMD64
 Ren'Py 8.2.1.24030407
 ITShow 1.0
-Mon Jun 10 22:24:16 2024
+Mon Jun 17 14:55:19 2024
