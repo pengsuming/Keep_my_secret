@@ -2,9 +2,17 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 109: expected statement.
-    "그러나 " + 여주 + "의 몇번의 부름에도 완자는 문을 열어주지 않았다.."
-           ^
+File "game/script.rpy", line 334: choice menuitem expects a non-empty block.
+    "있기야 하지~ 근데.. 내가 너를 도와줄 것 같아!?":
+                                    ^
+
+File "game/script.rpy", line 404: choice menuitem expects a non-empty block.
+    "완자야 우린 영원히 함께야 Forever.":
+                              ^
+
+File "game/script.rpy", line 486: choice menuitem expects a non-empty block.
+    "내 남자친구 김완자!!!":
+                    ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Mon Jun 17 21:15:58 2024
+Tue Jun 18 15:27:29 2024
