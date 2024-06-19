@@ -2,17 +2,9 @@
 errors listed below, and try again.
 
 
-File "game/script.rpy", line 334: choice menuitem expects a non-empty block.
-    "있기야 하지~ 근데.. 내가 너를 도와줄 것 같아!?":
-                                    ^
-
-File "game/script.rpy", line 404: choice menuitem expects a non-empty block.
-    "완자야 우린 영원히 함께야 Forever.":
-                              ^
-
-File "game/script.rpy", line 486: choice menuitem expects a non-empty block.
-    "내 남자친구 김완자!!!":
-                    ^
+File "game/script.rpy", line 101: expected 'label_name' not found.
+    call python "main.py"
+        ^
 
 Ren'Py Version: Ren'Py 8.2.1.24030407
-Tue Jun 18 15:27:29 2024
+Wed Jun 19 15:51:10 2024
