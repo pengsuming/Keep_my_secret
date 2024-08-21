@@ -24,7 +24,5 @@
 
 이 게임을 통해 환경 보호의 중요성을 깨닫고, 색다른 미연시 게임으로 즐겁게 플레이 해보세요!
 
-<div>
     <img src="https://github.com/pengsuming/Keep_my_secret/issues/3#issue-2477113603">
-   
-</div>
+
