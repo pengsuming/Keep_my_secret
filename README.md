@@ -26,8 +26,7 @@
 
 ## 시작화면 
 
-<div>
-<img src="https://github.com/pengsuming/Keep_my_secret/issues/3#issue-2477113603">
-    
+<div style="display: flex;">
+    <img src="https://github.com/pengsuming/Keep_my_secret/issues/3#issue-2477113603">
 </div>
 
