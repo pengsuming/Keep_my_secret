@@ -26,7 +26,5 @@
 
 <div>
     <img src="https://github.com/pengsuming/Keep_my_secret/issues/3#issue-2477113603">
-    <img src="">
-    <img src="">
-    <img src="">
+   
 </div>
